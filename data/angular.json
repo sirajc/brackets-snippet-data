@@ -1,0 +1,114 @@
+[
+  {
+    "name": "AngularJS module",
+    "trigger": "ngmodc",
+    "usage": "ngc moduleName",
+    "description": "Create AngularJS module",
+    "template": "angular.module('$${module}', [!!{cursor}]);"
+  },
+  {
+    "name": "Get AngularJS module",
+    "trigger": "ngmod",
+    "usage": "ng moduleName",
+    "description": "Getter of AngularJS module",
+    "template": "angular.module('$${module}')\n!!{cursor}"
+  },
+  {
+    "name": "Controller",
+    "trigger": "ngcon",
+    "usage": "ng controllerName",
+    "description": "AngularJS controller",
+    "template": ".controller('$${controller}', $${controller});!!{cursor}"
+  },
+  {
+    "name": "Service",
+    "trigger": "ngser",
+    "usage": "ng serviceName",
+    "description": "AngularJS service",
+    "template": ".service('$${service}', $${service});!!{cursor}"
+  },
+  {
+    "name": "Factory",
+    "trigger": "ngfac",
+    "usage": "ng factoryName",
+    "description": "AngularJS factory",
+    "template": ".factory('$${factory}', $${factory});!!{cursor}"
+  },
+  {
+    "name": "Directive",
+    "trigger": "ngdir",
+    "usage": "ng direciveName",
+    "description": "AngularJS directive",
+    "template": ".directive('$${directive}', $${directive});!!{cursor}"
+  },
+  {
+    "name": "Function for Angular service",
+    "trigger": "ngf",
+    "usage": "ng functionName",
+    "description": "Create a function for AngularJS service (controller, directive)",
+    "template": "var $${name} = function() {\n!!{cursor}\n}"
+  },
+  {
+    "name": "Directive definition object",
+    "trigger": "ddo",
+    "usage": "ddo",
+    "description": "Creates bare minimum directive definition object",
+    "template": "ddo.snippet"
+  },
+  {
+    "name": "Directive definition object Full",
+    "trigger": "ddof",
+    "usage": "ddof",
+    "description": "Creates full directive definition object",
+    "template": "ddof.snippet"
+  },
+  {
+    "name": "Directive Compile function",
+    "trigger": "compile",
+    "usage": "compile",
+    "description": "Compile function in DDO",
+    "template": "compile: function(tElem, tAttrs) {\n\t!!{cursor}\n}"
+  },
+  {
+    "name": "Directive Link function",
+    "trigger": "link",
+    "usage": "link",
+    "description": "Link function of DDO",
+    "template": "link: function(scope, elem, attrs){\n\t!!{cursor}\n}"
+  },
+  {
+    "name": "Directive pre Link function",
+    "trigger": "pre",
+    "usage": "post",
+    "description": "Pre link function in DDO",
+    "template": "link: function(scope, elem, attrs){\n\t!!{cursor}\n}"
+  },
+  {
+    "name": "Directive post Link function",
+    "trigger": "post",
+    "usage": "post",
+    "description": "Post link function in DDO",
+    "template": "link: function(scope, elem, attrs){\n\t!!{cursor}\n}"
+  },
+  {
+    "name": "Div with controller",
+    "trigger": "dcon",
+    "usage": "dcon controller controllerAs",
+    "description": "Create a div with controller and controllerAs",
+    "template": "<div data-ng-controller=\"$${controller} as $${controllerAs}\">\n\t\t!!{cursor}\n</div>"
+  },
+  {
+    "name": "Route Provider when",
+    "trigger": "ngrpw",
+    "usage": "ngrpw",
+    "description": "Angular router provider when",
+    "template": "ngrpw.snippet"
+  },
+  {
+    "name": "Route Provider otherwise",
+    "trigger": "ngrpo",
+    "usage": "ngrpo",
+    "description": "Angular router provider otherwise",
+    "template": "ngrpo.snippet"
+  }
+]

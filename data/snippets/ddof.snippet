@@ -1,0 +1,37 @@
+return {!!{cursor}
+  priority: 0,
+  template: '<div></div>',
+  // templateUrl: 'directive.html',
+  transclude: false,
+  restrict: 'A',
+  scope: false,
+  controller: function(scope, element, attrs, transclude, otherInjectables) {
+    
+  },
+  controllerAs: 'stringAlias',
+  require: 'siblingDirectiveName', // ['^parentDirectiveName', '?optionalDirectiveName', '?^optionalParent'],
+  compile: function compile(tElement, tAttrs, transclude) {
+    return {
+      // Compile time DOM manipulation
+      pre: function preLink(scope, iElement, iAttrs, controller) { 
+        
+      },
+      post: function postLink(scope, iElement, iAttrs, controller) { 
+        
+      }
+    }
+    // return function postLink( ... ) { ... }
+  }
+  
+  //  link: {
+  //    pre: function preLink(scope, iElement, iAttrs, controller) { 
+  //        
+  //    },
+  //    post: function postLink(scope, iElement, iAttrs, controller) { 
+  //        
+  //    }
+  
+  // link: function postLink(scope, iElement, iAttrs, controller) { 
+  //        
+  //    }
+};

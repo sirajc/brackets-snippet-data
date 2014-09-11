@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Bracket snippet definition",
+    "trigger": "bs",
+    "usage": "bs",
+    "description": "Create a Bracket snippet definition",
+    "template": "{\n\"name\": \"!!{cursor}\",\n\"trigger\": \"\",\n\"usage\": \"\",\n\"description\": \"\",\n\"template\": \"!!{cursor}\"\n}"
+  }
+]
